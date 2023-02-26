@@ -24,10 +24,9 @@
                 <h1 class="title">GET IN TOUCH</h1>
             </div>
         <form action="">
-            
             <div>
                 <label for="name">Name </label>
-                <input type="text" id="name"> 
+                <input type="text" id="myText"> 
             </div>
             <div>
                 <label for="email"> Email</label>
@@ -51,9 +50,20 @@
                 <textarea id="address"></textarea>
             </div>
             <div class="submit">
-                <button>Submit</button>
+                <button onclick="myFunction()">Submit</button>
             </div>
 
         </form>
+        
     </body>
+    <script>
+        // function myFunction(){
+        //     // let name = document.getElementById(name).value
+        //     console.log("hello")
+        // }
+        function myFunction() {
+  var x = document.getElementById("myText").value;
+  alert(x)
+}
+    </script>
 </html>
